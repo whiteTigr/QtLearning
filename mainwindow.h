@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
 
 namespace Ui {
   class MainWindow;
@@ -9,9 +10,11 @@ namespace Ui {
 
 class MainWindow : public QMainWindow
 {
-    Q_OBJECT
+  Q_OBJECT
     
   public:
+    QLabel *label;
+
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     
