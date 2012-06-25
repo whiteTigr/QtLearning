@@ -5,7 +5,7 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 {
   ui->setupUi(this);
 
-  label = new QLabel("Hello qt", ui->centralWidget, Qt::Widget);
+  label = new QLabel("<h2><i>Hello</i><font color=red> Qt!</font></h2>", ui->centralWidget, Qt::Widget);
 }
 
 MainWindow::~MainWindow()
